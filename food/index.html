@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Armand Giovani</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="/quiz1/assets/vg.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="main-content">
+<section class="container active" id="portfolio" style="margin-top: 2rem;">
+    <div class="main-title">
+        <h2>Local <span>Foods</span><span class="bg-text">Foods</span></h2>
+    </div>
+    <p class="port-text">
+        Some of the most popular foods in West Sumatera
+    </p>
+    <div class="carditems">
+        <div class="carditem-item">
+            <div class="image">
+                <img src="/quiz1/assets/rendang.jpeg" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Rendang</h3>
+                <p style="text-align: center">Rendang adalah hidangan berbahan dasar daging yang dihasilkan dari proses memasak suhu rendah dalam waktu lama dengan menggunakan aneka rempah-rempah dan santan.</p>
+            </div>
+        </div>
+        <div class="carditem-item">
+            <div class="image">
+                <img src="/quiz1/assets/sate.jpg" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Sate Padang</h3>
+                <p style="text-align: center">Rasa sate Padang yang dijual di pulau lain berbeda dengan di tempat asalnya.</p>
+            </div>
+        </div>
+        <div class="carditem-item">
+            <div class="image">
+                <img src="/quiz1/assets/lemang.webp" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Lamang</h3>
+                <p style="text-align: center">Biasanya lamang disantap dengan pisang atau fermentasi beras ketan hitam. Makanan ini dimasak di dalam batang bambu dengan api terbuka.</p>
+            </div>
+        </div>
+        <div class="carditem-item">
+            <div class="image">
+                <img src="/quiz1/assets/karupuak.jpg" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Karupuak kuah</h3>
+                <p style="text-align: center">Kerupuk lebar ini terbuat dari bahan singkong atau beras. Di atasnya disiramkan kuah sate Padang yang dicampur sambal dan bihun.</p>
+            </div>
+        </div>
+        <div class="carditem-item">
+            <div class="image">
+                <img src="/quiz1/assets/itiak.jpeg" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Itiak lado mudo</h3>
+                <p style="text-align: center">Bebek masak sambal hijau. Ada dua cara memasaknya, yakni dibuat rendang (balado) atau digulai.</p>
+            </div>
+        </div>
+        <div class="carditem-item">
+            <div class="image">
+                <img src="/quiz1/assets/katupek.jpg" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Ketupek pical</h3>
+                <p style="text-align: center">Pecel khas Minang karena berisi sayuran yang disiram bumbu kacang. Rasanya gurih, karena terdiri dari jantung pisang, rebung daun pucuk singkong, dan daun lobak Singgalang.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="controls">
+    <div class="control" data-id="home" >
+        <i class="fas fa-home"></i>
+    </div>
+    <div class="control" data-id="profile">
+        <i class="fas fa-user"></i>
+    </div>
+    <div class="control" data-id="hometown">
+        <i class="fas fa-city"></i>
+    </div>
+    <div class="control active-btn" data-id="food">
+        <i class="fas fa-hamburger"></i>
+    </div>
+    <div class="control" data-id="tourist">
+        <i class="fas fa-skiing"></i>
+    </div>
+</div>
+<script>
+    (function () {
+        [...document.querySelectorAll(".control")].forEach(button => {
+            button.addEventListener("click", function() {
+                if (!button.classList.contains('active-btn'))
+                    if (button.dataset.id === 'home') {
+                        window.location.href = '..'
+                    } else {
+                        window.location.href = '../'+button.dataset.id;
+                    }
+            })
+        });
+    })();
+</script>
+</body>
+</html>

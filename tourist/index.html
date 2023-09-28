@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Armand Giovani</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="/quiz1/assets/vg.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="main-content">
+<section class="container active" id="portfolio" style="margin-top: 2rem;">
+    <div class="main-title">
+        <h2>Tourist <span>Destinations</span><span class="bg-text">Tourist</span></h2>
+    </div>
+    <p class="port-text">
+        Some of the most popular tourist Destinations in West Sumatera
+    </p>
+    <div class="carditems">
+        <div class="carditem-item">
+            <div class="image">
+                 <img src="/quiz1/assets/Jamgadang.webp" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Jam Gadang</h3>
+                <p style="text-align: center">Jam Gadang adalah salah satu destinasi wisata Sumatera Barat yang paling terkenal, tidak hanya di Indonesia, tetapi juga di dunia. Jam gadang Identik dengan Angka 4 Romawinya yang ditulis IIII</p>
+            </div>
+        </div>
+        <div class="carditem-item">
+            <div class="image">
+                <img src="/quiz1/assets/plawang.jpg" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Puncak Lawang</h3>
+                <p style="text-align: center">Puncak Lawang adalah Tempat observasi indah di puncak bukit, dengan panorama Danau Maninjau, serta populer untuk piknik dan berparalayang.</p>
+            </div>
+        </div>
+        <div class="carditem-item">
+            <div class="image">
+                <img src="/quiz1/assets/pagaruyuang.jpg" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Istano Pagaruyung</h3>
+                <p style="text-align: center">Istano Basa Pagaruyung adalah salah satu tempat wisata di Sumatera Barat yang sangat terkenal. Selain menjadi destinasi wisata, istana ini juga merupakan ikon dari kerajaan Pagaruyung.</p>
+            </div>
+        </div>
+        <div class="carditem-item">
+            <div class="image">
+                <img src="/quiz1/assets/sianok.jpg" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Ngarai Sianok</h3>
+                <p style="text-align: center">Ngarai Sianok merupakan sebuah lembah curam yang terletak di perbatasan Kota Bukittinggi, di Kecamatan IV Koto, Kabupaten Agam, Sumatra Barat.</p>
+            </div>
+        </div>
+        <div class="carditem-item">
+            <div class="image">
+                <img src="/quiz1/assets/nyarai.jpg" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Air Terjun Nyarai</h3>
+                <p style="text-align: center">Air Terjun Nyarai Merupakan salah satu air terjun yang iconic di Sumatera Barat. Dengan ketinggian Air terjun sekitar 8 meter, dikelilingi oleh pepohonan yang rindang dan bebatuan yang sangat besar.</p>
+            </div>
+        </div>
+        <div class="carditem-item">
+            <div class="image">
+                <img src="/quiz1/assets/lobangjepang.jpg" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Lubang Jepang</h3>
+                <p style="text-align: center">Lubang Jepang adalah salah satu Terowongan terpanjang di Indonesia dan Asia. Ini merupakan tempat bersejarah yang menjadi terowongan perlindungan dan dibangun oleh tentara Jepang.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="controls">
+    <div class="control" data-id="home" >
+        <i class="fas fa-home"></i>
+    </div>
+    <div class="control" data-id="profile">
+        <i class="fas fa-user"></i>
+    </div>
+    <div class="control" data-id="hometown">
+        <i class="fas fa-city"></i>
+    </div>
+    <div class="control" data-id="food">
+        <i class="fas fa-hamburger"></i>
+    </div>
+    <div class="control active-btn" data-id="tourist">
+        <i class="fas fa-skiing"></i>
+    </div>
+</div>
+<script>
+    (function () {
+        [...document.querySelectorAll(".control")].forEach(button => {
+            button.addEventListener("click", function() {
+                if (!button.classList.contains('active-btn'))
+                    if (button.dataset.id === 'home') {
+                        window.location.href = '..'
+                    } else {
+                        window.location.href = '../'+button.dataset.id;
+                    }
+            })
+        });
+    })();
+</script>
+</body>
+</html>
